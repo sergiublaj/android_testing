@@ -18,9 +18,9 @@ public class NameActivity extends AppCompatActivity {
     public void enteringName(View view) {
         EditText editText = findViewById(R.id.enterName);
 
-        TextView textView = findViewById(R.id.textView);
+        editText.setHint(R.string.name_placeholder);
 
-        editText.setText("");
+        TextView textView = findViewById(R.id.textView);
 
         textView.setVisibility(View.INVISIBLE);
     }
@@ -30,9 +30,12 @@ public class NameActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.textView);
 
-        textView.setText(String.format("Ești cool, %s =)", editText.getText().toString()));
+        if (!editText.getText().toString().isEmpty()) {
+            textView.setText(String.format("Ești cool, %s =)", editText.getText().toString()));
 
-        textView.setVisibility(View.VISIBLE);
+            textView.setVisibility(View.VISIBLE);
+        }
+        editText.clearFocus();
 
         editText.setText("");
     }
