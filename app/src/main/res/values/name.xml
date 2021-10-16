@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_placeholder">Enter your name here</string>
+    <string name="cool_text">Esti cool =)</string>
+    <string name="button_text">v</string>
+</resources>

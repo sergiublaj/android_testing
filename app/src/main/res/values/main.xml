@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">Welcome!</string>
+    <string name="button_nutella">NUTELLA</string>
+    <string name="button_name">NAME</string>
+    <string name="button_squares">SQUARES</string>
+</resources>
