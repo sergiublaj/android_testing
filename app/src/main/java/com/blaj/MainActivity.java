@@ -31,4 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         this.startActivity(squaresIntent);
     }
+
+    public void openPhotos(View view) {
+        Intent photosIntent = new Intent(this.getApplicationContext(), PhotosActivity.class);
+
+        this.startActivity(photosIntent);
+    }
 }
